@@ -1,0 +1,4 @@
+addOrder A 11 21 31
+addOrder B 41 11
+setStatus A COMPLETED
+printOrders
