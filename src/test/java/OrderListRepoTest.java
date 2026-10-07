@@ -67,6 +67,7 @@ class OrderListRepoTest {
     void removeOrder() {
         //GIVEN
         OrderListRepo repo = new OrderListRepo();
+        repo.addOrder(new Order("1", List.of(new Product("1", "Apfel"))));
 
         //WHEN
         repo.removeOrder("1");
