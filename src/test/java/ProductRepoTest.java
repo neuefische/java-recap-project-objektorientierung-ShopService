@@ -18,7 +18,7 @@ class ProductRepoTest {
         //THEN
         List<Product> expected = new ArrayList<>();
         expected.add(new Product("1", "Apfel"));
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @org.junit.jupiter.api.Test
@@ -31,7 +31,7 @@ class ProductRepoTest {
 
         //THEN
         Product expected = new Product("1", "Apfel");
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @org.junit.jupiter.api.Test
@@ -45,8 +45,8 @@ class ProductRepoTest {
 
         //THEN
         Product expected = new Product("2", "Banane");
-        assertEquals(actual, expected);
-        assertEquals(repo.getProductById("2"), expected);
+        assertEquals(expected, actual);
+        assertEquals(expected, repo.getProductById("2"));
     }
 
     @org.junit.jupiter.api.Test
