@@ -67,6 +67,7 @@ class OrderMapRepoTest {
     void removeOrder() {
         //GIVEN
         OrderMapRepo repo = new OrderMapRepo();
+        repo.addOrder(new Order("1", List.of(new Product("1", "Apfel"))));
 
         //WHEN
         repo.removeOrder("1");
